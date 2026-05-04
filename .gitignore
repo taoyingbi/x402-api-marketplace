@@ -1,0 +1,58 @@
+# 依赖目录
+node_modules/
+__pycache__/
+*.pyc
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 日志文件
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 运行时数据
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# 构建产物
+dist/
+build/
+
+# IDE配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# PM2配置
+.pm2/
+dump.pm2
+
+# 临时文件
+tmp/
+temp/
+
+# 项目生成目录（保留模板）
+projects/*/node_modules/
+projects/*/package-lock.json
+
+# 敏感信息
+*.pem
+*.key
+*.crt
