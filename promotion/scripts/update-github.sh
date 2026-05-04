@@ -22,6 +22,6 @@ fi
 git commit -m "Update: $(date '+%Y-%m-%d %H:%M') - Promotion content update"
 
 # 推送到 GitHub
-git push origin main
+git push origin master
 
 echo "✅ GitHub 已更新"
