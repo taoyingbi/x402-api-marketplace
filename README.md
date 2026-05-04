@@ -57,7 +57,7 @@ x402微支付集成：
 
 ### 1. 克隆仓库
 ```bash
-git clone https://github.com/yourusername/x402-api-marketplace.git
+git clone https://github.com/taoyingbi/x402-api-marketplace.git
 cd x402-api-marketplace
 ```
 
@@ -259,15 +259,15 @@ MIT License - 详见 [LICENSE](LICENSE)
 
 ## 📞 联系方式
 
-- GitHub：[@yourusername](https://github.com/yourusername)
-- Twitter：[@yourusername](https://twitter.com/yourusername)
-- Email：your@email.com
+- GitHub：[@taoyingbi](https://github.com/taoyingbi)
+- Twitter：[@taoyingbi](https://twitter.com/taoyingbi)
+- Email：lanxuan270@gmail.com
 
 ## 🔗 相关链接
 
-- [API文档](https://your-domain.com/docs)
-- [在线演示](https://your-domain.com/demo)
-- [技术博客](https://your-blog.com)
+- [API文档](https://github.com/taoyingbi/x402-api-marketplace#-api文档)
+- [在线演示](http://localhost:3000)
+- [技术博客](https://dev.to/xuan_lan_d4c126b5705261a4)
 
 ---
 
