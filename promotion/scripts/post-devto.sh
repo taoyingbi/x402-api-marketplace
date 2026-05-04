@@ -28,16 +28,25 @@ BODY=$(echo "$CONTENT" | sed '1,/^---$/d')
 # JSON escape
 BODY_JSON=$(echo "$BODY" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))')
 
-curl -s -X POST "https://dev.to/api/articles" \
+# 调用 Dev.to API
+RESPONSE=$(curl -s -X POST "https://dev.to/api/articles" \
   -H "Content-Type: application/json" \
   -H "api-key: $API_KEY" \
   -d "{
     \"article\": {
-      \"title\": $TITLE,
+      \"title\": \"$TITLE\",
       \"body_markdown\": $BODY_JSON,
-      \"description\": $DESCRIPTION,
+      \"description\": \"$DESCRIPTION\",
       \"published\": true,
       \"tags\": [$TAGS],
-      \"canonical_url\": $CANONICAL
+      \"canonical_url\": \"$CANONICAL\"
     }
-  }" | python3 -c 'import json,sys; d=json.load(sys.stdin); print(f"✅ Posted: {d.get(\"url\", d)}")'
+  }")
+
+# 解析响应
+echo "$RESPONSE" | python3 -c "
+import json, sys
+d = json.load(sys.stdin)
+url = d.get('url', d.get('errors', d))
+print(f'✅ Posted: {url}')
+"
