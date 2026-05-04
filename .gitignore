@@ -56,3 +56,15 @@ projects/*/package-lock.json
 *.pem
 *.key
 *.crt
+
+# 钱包私钥
+*.private
+*.secret
+
+# 推广计划（可能包含敏感信息）
+promotion_plan.json
+promotion_plan_*.json
+
+# 用户数据
+user_data/
+user_*.json
