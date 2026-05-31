@@ -1,0 +1,23 @@
+{
+  "name": "auto-file_converter-20260530",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@coinbase/cdp-sdk": "^1.48.2",
+    "@x402/core": "^2.11.0",
+    "@x402/evm": "^2.11.0",
+    "@x402/express": "^2.11.0",
+    "@x402/fetch": "^2.11.0",
+    "express": "^4.18.0",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.0",
+    "pdf-lib": "^1.17.1",
+    "mammoth": "^1.6.0",
+    "xlsx": "^0.18.5"
+  }
+}
